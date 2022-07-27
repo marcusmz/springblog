@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/city}" th:method="POST">
+    <label for="location">Search</label>
+    <input type="text" name="location" id="location" placeholder="Enter your favorite city">
+    <button>Search</button>
+</form>
+
+</body>
+</html>
