@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class PostController {
     @GetMapping("/posts")
     @ResponseBody
-    public String posts(){
+    public String getPosts(){
         return "posts index page";
     }
 
     @GetMapping("/posts/{id}")
     @ResponseBody
     public String postsId(@PathVariable long id){
-        return "View an individual class";
+        return "View an individual class" + id;
     }
 
     @GetMapping("/posts/create")
